@@ -5,7 +5,7 @@ $telegramApiUrl = "https://api.telegram.org/bot" . $botToken . "/";
 
 // Placeholder HorridAPI base URL
 // Update this to the actual base URL of your HorridAPI endpoints.
-$horridApiUrl = "https://api.horridapi.example.com/";
+$horridApiUrl = "https://horrid-api.vercel.app/";
 
 /**
  * Send a message to a Telegram chat.
@@ -88,7 +88,7 @@ if (isset($update["message"])) {
         case "/video":
             // Replace with your LLVA API key
             $llvaApiKey = "YOUR_LLVA_API_KEY";
-            $url = $horridApiUrl . "video?prompt=" . urlencode("a girl and boy kissing") . "&api_key=" . urlencode($llvaApiKey);
+            $url = $horridApiUrl . "video?prompt=" . urlencode("a girl") . "&api_key=" . urlencode($llvaApiKey);
             $response = getRequest($url);
             sendMessage($chatId, "Video generated: " . $response);
             break;
