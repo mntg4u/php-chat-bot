@@ -87,7 +87,7 @@ if (isset($update["message"])) {
 
         case "/video":
             // Replace with your LLVA API key
-            $llvaApiKey = "YOUR_LLVA_API_KEY";
+            $llvaApiKey = "horridapi_FAUZr18_zQb6KtFGm7KX0g_free_key";
             $url = $horridApiUrl . "video?prompt=" . urlencode("a girl") . "&api_key=" . urlencode($llvaApiKey);
             $response = getRequest($url);
             sendMessage($chatId, "Video generated: " . $response);
@@ -107,7 +107,7 @@ if (isset($update["message"])) {
 
         case "/upscale":
             // Replace with your image URL and API key
-            $apiKey = "YOUR_API_KEY";
+            $apiKey = "horridapi_FAUZr18_zQb6KtFGm7KX0g_free_key";
             $imageUrl = "https://www.example.jpg";
             $url = $horridApiUrl . "upscale?url=" . urlencode($imageUrl) . "&api_key=" . urlencode($apiKey) . "&scale=8";
             $response = getRequest($url);
@@ -156,7 +156,7 @@ if (isset($update["message"])) {
 
         case "/imagine":
             // Replace with your API key if needed
-            $apiKey = "YOUR_API_KEY";
+            $apiKey = "horridapi_FAUZr18_zQb6KtFGm7KX0g_free_key";
             $url = $horridApiUrl . "imagine?prompt=" . urlencode("a cute cat") . "&api_key=" . urlencode($apiKey);
             $response = getRequest($url);
             sendMessage($chatId, "Imagine Image: " . $response);
